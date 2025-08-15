@@ -14,31 +14,33 @@ This task evaluates the ability of a Large Language Model (LLM) to answer progre
 > which team has finished at position 1 most number of times?
 
 ChatGPT & DeepSeek
-Both correctly calculated Manchester United with 13 times
+Both calculated Manchester United with 13 times
 
 **2**
 > which team has the best goal scoring record over a period of 3 years
 
 ChatGPT & DeepSeek
-Both correctly calculated Manchester City with 303 goals between 2017-2019
+Both calculated Manchester City with 303 goals between 2017-2019
 
 **3**
 > which team conceded the least goals over a period of 3 years
 
 ChatGPT & DeepSeek
-Both correctly calculated Chelsea with 61 goals between 2005-2008
+Both calculated Chelsea with 61 goals between 2005-2008
 
 **4**
 > which team had the worst goal scoring over a period of 3 years
 
 ChatGPT & DeepSeek
-Both correctly calculated Crystal Palace with 116 goals
+Both calculated Crystal Palace with 116 goals<br>
+After verifying with code, both got this answer wrong, when  asked why, they said they did not check for only consecutive years
 
 **5**
 > which team had the worst goal conceded over a period of 3 years
 
 ChatGPT & DeepSeek
-Both correctly calculated West Brom with 196 goals between 2017-2019
+Both calculated West Brom with 196 goals between 2017-2019<br>
+After verifying with code, both got this answer wrong, when  asked why, they said they did not check for only consecutive years
 
 **6**
 > which team deteriorated the most from 2023 to 2024 but avoided relegation
@@ -57,10 +59,7 @@ Identified Chelsea and Manchester United as the team that detoriated the most, D
 
 ChatGPT and DeepSeek both identified the defense as the issue, this is because they conceded 65 goals and since their goals scored was better than teams in the bottom half of the table.
 
+Code shows that Brentford scored more goals on average than 5 teams just above them, but ended up conceding more goals on average when compared, thus both correctly identified that Brentford should focus on defense.
 
 
-
-
-
-
-
+As we can see that both ChatGPT and DeepSeek can get easy calculations right but we need to use better wording when asking to solve complex problems.
